@@ -1,0 +1,12 @@
+<h1>New List</h1>
+
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Back to movies list", lists_path, class: "btn btn-primary" %>
+</div>
