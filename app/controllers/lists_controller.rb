@@ -2,9 +2,11 @@ class ListsController < ApplicationController
   before_action :set_list, except: %i[create new index]
   def index
     @lists = List.all
+    @list = List.new
   end
 
   def show
+    @movies = Movie.all
   end
 
   def new
